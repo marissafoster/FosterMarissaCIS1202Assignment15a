@@ -25,7 +25,11 @@ char character(char, int);
 
 int main()
 {
-
+    cout << character('a', 1) << endl;
+    cout << character('a', -1) << endl;
+    cout << character('Z', -1) << endl;
+    cout << character('?', 5) << endl;
+    cout << character('A', 32) << endl;
 
 }
 
@@ -56,17 +60,17 @@ char character(char start, int offset)
 
     catch (invalidCharacterExcpeption exception1)
     {
-        cout << " Invalid Character Exception " << endl;
+        cout << "Invalid Character Exception";
         return ' ';
     }
     catch (invalidRangeException exception2)
     {
-        cout << " Invalid Range Exception " << endl;
+        cout << "Invalid Range Exception";
         return ' ';
     }
     catch (caseConversionException exception3)
     {
-        cout << " Cannot make case changes from upper to lower or otherwise " << endl;
+        cout << "Cannot make case changes from upper to lower or lower to upper ";
         return ' ';
     }
 
