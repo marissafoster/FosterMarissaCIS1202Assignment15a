@@ -7,6 +7,16 @@
 
 using namespace std;
 
+class invalidCharacterExcpeption
+{
+
+};
+
+class invalidRangeException
+{
+
+};
+
 char character(char, int);
 
 int main()
@@ -17,5 +27,8 @@ int main()
 
 char character(char start, int offset)
 {
+	int startAsciiValue = int(start);
+	int tartget = startAsciiValue + offset;
+
 
 }
